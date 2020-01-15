@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Web Page</title>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<p>Hai hello</p>
+	<ul>
+		<li>Blue</li>
+		<li>Green</li>
+		<li>Red</li>
+	</ul>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+$("ul").on("click","li",function(){
+	
+	if($(this).text()=="Blue")
+	{
+		
+$(this).css("color","blue");
+}
+if($(this).text()=="Red")
+	{
+		
+$(this).css("color","red");
+}
+});
+	});
+	
+	 var words = $("p").first().text().split(" "); 
+        var text = words.join("*"); 
+        alert(text);
+       // $("div").show(); 
+</script>
+</body>
+</html>
